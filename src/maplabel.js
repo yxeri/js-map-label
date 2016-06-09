@@ -133,7 +133,8 @@ MapLabel.prototype.onAdd = function() {
 
   var panes = this.getPanes();
   if (panes) {
-    panes.overlayLayer.appendChild(canvas);
+    // Adding it to the floatPane will allow it to be drawn above marker icons
+    panes.floatPane.appendChild(canvas);
   }
 };
 MapLabel.prototype['onAdd'] = MapLabel.prototype.onAdd;
