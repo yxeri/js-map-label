@@ -168,18 +168,18 @@ MapLabel.prototype.draw = function() {
   switch(this.get('align')) {
     case 'left':
       style['left'] = pos.x - (this.canvas_.width / (window.devicePixelRatio ? window.devicePixelRatio : 1)) + 'px';
-      style['margin-left'] = '-1em';
-      style['margin-top'] = '-0.4em';
+      style['margin-left'] = '-0.9em';
+      style['margin-top'] = '-0.9em';
       break;
     case 'right':
       style['left'] = pos.x + 'px';
-      style['margin-left'] = '1em';
-      style['margin-top'] = '-0.4em';
+      style['margin-left'] = '0.8em';
+      style['margin-top'] = '-0.9em';
       break;
     default:
       style['left'] = (pos.x - (this.canvas_.width / (window.devicePixelRatio ? window.devicePixelRatio : 1)) / 2) + 'px';
       style['margin-left'] = 0;
-      style['margin-top'] = '1em';
+      style['margin-top'] = '0.5em';
   }
 
   style['visibility'] = this.getVisible_();
